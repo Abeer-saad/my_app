@@ -46,3 +46,22 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+
+# ASP.NET backend and local credentials
+**/bin/
+**/obj/
+**/.vs/
+**/TestResults/
+**/appsettings.Local.json
+**/appsettings.*.Local.json
+**/secrets.json
+**/.env
+**/.env.*
+*.mdf
+*.ldf
+*.bak
+*.pfx
+*.p12
+*.key
+# Machine-specific implementation report
+INTEGRATION.md

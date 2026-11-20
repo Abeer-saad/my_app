@@ -1,0 +1,2 @@
+@model LibraryManagement.Application.DTOs.BorrowingDto
+<h1>Borrowing Details</h1><dl class="row"><dt class="col-sm-3">CustomerName</dt><dd class="col-sm-9">@Model.CustomerName</dd><dt class="col-sm-3">BookTitle</dt><dd class="col-sm-9">@Model.BookTitle</dd><dt class="col-sm-3">BorrowDate</dt><dd class="col-sm-9">@Model.BorrowDate</dd><dt class="col-sm-3">ReturnDate</dt><dd class="col-sm-9">@Model.ReturnDate</dd></dl><a asp-action="Edit" asp-route-uuid="@Model.Uuid">Edit</a> | <a asp-action="Index">Back to List</a>

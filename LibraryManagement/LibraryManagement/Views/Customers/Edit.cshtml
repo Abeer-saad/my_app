@@ -1,0 +1,4 @@
+@model LibraryManagement.Application.DTOs.CustomerUpdateDto
+@{ViewData["Title"]="Edit Customer";}
+<h1>Edit Customer</h1><form asp-action="Edit" method="post"><input asp-for="Uuid" type="hidden"/><div asp-validation-summary="All" class="text-danger"></div><div class="mb-3"><label asp-for="Name"></label><input asp-for="Name" type="text" class="form-control"/><span asp-validation-for="Name" class="text-danger"></span></div><div class="mb-3"><label asp-for="Email"></label><input asp-for="Email" type="email" class="form-control"/><span asp-validation-for="Email" class="text-danger"></span></div><div class="mb-3"><label asp-for="Phone"></label><input asp-for="Phone" type="text" class="form-control"/><span asp-validation-for="Phone" class="text-danger"></span></div><button type="submit" class="btn btn-primary">Save</button> <a asp-action="Index">Back to List</a></form>
+@section Scripts{<partial name="_ValidationScriptsPartial"/>}

@@ -1,0 +1,4 @@
+@model LibraryManagement.Application.DTOs.CategoryCreateDto
+@{ViewData["Title"]="Create Category";}
+<h1>Create Category</h1><form asp-action="Create" method="post"><div asp-validation-summary="All" class="text-danger"></div><div class="mb-3"><label asp-for="Name"></label><input asp-for="Name" type="text" class="form-control"/><span asp-validation-for="Name" class="text-danger"></span></div><button type="submit" class="btn btn-primary">Save</button> <a asp-action="Index">Back to List</a></form>
+@section Scripts{<partial name="_ValidationScriptsPartial"/>}
